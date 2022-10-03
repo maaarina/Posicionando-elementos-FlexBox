@@ -1,48 +1,87 @@
-.cabecalhoPrincipal > .container {
+.cabecalhoPrincipal>.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.cabecalhoPrincipal-nav{
+.cabecalhoPrincipal-nav {
     display: flex;
 }
 
-.conteudoPrincipal-cursos{
+.conteudoPrincipal-cursos {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.conteudoPrincipal-cursos-link{
+.conteudoPrincipal-cursos-link {
     width: 23%;
     margin-bottom: 1%;
 }
 
-.rodapePrincipal-navMap-list{
+.rodapePrincipal-navMap-list {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     height: 260px;
-    /*adicionei o limite no height de 260px, para o texto respeitar a altura e seguir no bloco, a propriedade flex-wrap faz com que o texto quebre e não passe do limite, seguindo para o lado*/
+    /*adicionei o limite no height de 260px, para o texto respeitar a altura e seguir na altura do bloco, a propriedade flex-wrap faz com que o texto quebre e não passe do limite, seguindo para o lado*/
 }
 
-.rodapePrincipal-patrocinadores .container{
+.rodapePrincipal-patrocinadores .container {
     display: flex;
     justify-content: space-between;
 }
 
-.rodapePrincipal-patrocinadores-list{
+.rodapePrincipal-patrocinadores-list {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 65%;
 }
 
-.rodapePrincipal-contatoForm{
+.rodapePrincipal-contatoForm {
     width: 35%;
 }
 
-.rodapePrincipal-contatoForm-fieldset{
+.rodapePrincipal-contatoForm-fieldset {
     display: flex;
+}
+
+
+@media (max-width: 745px) {
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+
+    }
+
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        margin: 0;
+        width: 100%;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: auto;
+    }
+
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+    }
 }
