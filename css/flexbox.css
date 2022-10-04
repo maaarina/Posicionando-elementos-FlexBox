@@ -1,4 +1,4 @@
-.cabecalhoPrincipal>.container {
+.cabecalhoPrincipal > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,12 +11,28 @@
 .conteudoPrincipal-cursos {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .conteudoPrincipal-cursos-link {
     width: 23%;
     margin-bottom: 1%;
+}
+
+.videoSobre .container{
+    display: flex;
+    align-items: center;
+}
+
+.videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /*divide os itens de acordo com o espaçamento. */
+    justify-content: space-between;
+    text-align: center;
+}
+
+.videoSobre-video{
+    flex-shrink: 2;
 }
 
 .rodapePrincipal-navMap-list {
@@ -61,6 +77,14 @@
 
     .conteudoPrincipal-cursos-link {
         width: 100%;
+    }
+
+    .videoSobre .container{
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: 0 auto;
     }
 
     .rodapePrincipal-navMap-list {
